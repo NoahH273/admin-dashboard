@@ -15,6 +15,9 @@
 .header {
     grid-area: header;
     background-color: white;
+    display: grid;
+    grid-template: 4fr 5fr / 1fr 600px;
+    place-items: center;
 }
 
 .sidebar {
