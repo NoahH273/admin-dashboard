@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: "sidebar header" 1fr
+                    "sidebar content"  4fr 
+                    / 1fr 5fr;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+
+.content {
+    grid-area: content;
+    background-color: grey;
+}
