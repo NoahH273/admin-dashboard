@@ -20,6 +20,26 @@
     place-items: center;
 }
 
+.search {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 25px;
+}
+
+.search-icon {
+    width: 25px;
+}
+
+.search-bar {
+    flex: 1;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgrey;
+    height: 2.5em;
+    padding: 10px;
+}
+
 .sidebar {
     grid-area: sidebar;
     background-color: aqua;
