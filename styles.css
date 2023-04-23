@@ -32,4 +32,12 @@
 .content {
     grid-area: content;
     background-color: grey;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 400px;
+    place-items: center;
+
+}
+
+.projects {
+    grid-row: span 2;
 }
