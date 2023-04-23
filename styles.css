@@ -42,7 +42,7 @@
     border: none;
     background-color: lightgrey;
     height: 2.5em;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .account {
@@ -111,11 +111,52 @@
 
 .sidebar {
     grid-area: sidebar;
-    background-color: aqua;
+    background-color: darkcyan;
     display: grid;
     grid-auto-rows: min-content;
-    gap: 50px;
+    gap: 25px;
     place-items: center;
+}
+
+.title-section {
+    display: flex;
+    gap: 15px;
+}
+
+.dashboard-icon {
+    width: 45px;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.nav, .info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav li, .info li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-button, .info-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: grab;
+}
+
+.nav-icon {
+    width: 25px;
 }
 
 .content {
