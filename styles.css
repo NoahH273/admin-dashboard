@@ -120,7 +120,9 @@
 
 .title-section {
     display: flex;
+    align-items: center;
     gap: 15px;
+    padding: 20px 20px 0;
 }
 
 .dashboard-icon {
@@ -151,7 +153,6 @@
     background: none;
     font-size: 20px;
     font-weight: bold;
-    color: white;
     cursor: grab;
 }
 
@@ -159,15 +160,55 @@
     width: 25px;
 }
 
+
+
 .content {
     grid-area: content;
-    background-color: grey;
+    background-color: lightgrey;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 400px;
+    grid-template: 1fr 1fr / 1fr 300px;
     place-items: center;
+    padding: 30px 20px 30px;
 
 }
 
-.projects {
+.projects-section {
+    width: 100%;
+    height: 100%;
     grid-row: span 2;
+    
+}
+
+.projects-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 225px;
+    gap: 50px;
+    width: 100%;
+    height: 90%;
+}
+
+
+.project {
+    width: 100%;
+    background-color: white;
+    padding: 25px 15px 15px;
+    border-radius: 15px;
+    border-left: 10px solid green;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.project-description {
+    padding-top: 10px;
 }
