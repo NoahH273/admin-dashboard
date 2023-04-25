@@ -168,8 +168,8 @@
     display: grid;
     grid-template: 1fr 1fr / 1fr 300px;
     place-items: center;
-    padding: 30px 20px 30px;
-
+    padding: 30px 20px 0;
+    column-gap: 20px;
 }
 
 .projects-section {
@@ -179,7 +179,7 @@
     
 }
 
-.projects-title {
+.projects-title, .announcements-title {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 20px;
@@ -201,6 +201,7 @@
     padding: 25px 15px 15px;
     border-radius: 15px;
     border-left: 10px solid green;
+    
 }
 
 .project-title {
@@ -211,4 +212,42 @@
 
 .project-description {
     padding-top: 10px;
+    color: lightslategray;
+}
+
+.announcements-section {
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.announcements-title {
+    text-align: center;
+}
+
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: white;
+
+}
+
+
+
+.announcement {
+    border-bottom: 2px solid lightgrey;
+    padding: 15px 10px 25px;
+    text-align: center;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement-title {
+    font-weight: bold;
 }
