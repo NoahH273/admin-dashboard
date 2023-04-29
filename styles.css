@@ -21,7 +21,7 @@
     display: grid;
     grid-template: 4fr 5fr / 1fr 500px;
     place-items: center;
-    padding: 25px 0;
+    padding: 15px 0 25px;
     row-gap: 25px;
 }
 
@@ -37,12 +37,12 @@
 }
 
 .search-bar {
-    flex: 1;
+    flex-basis: 350px;
     border-radius: 20px;
     border: none;
     background-color: lightgrey;
     height: 2.5em;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .account {
@@ -81,7 +81,7 @@
 }
 
 .welcome>.profile-picture {
-    width: 75px;
+    width: 60px;
     grid-row: span 2;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .welcome>.username {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .buttons {
@@ -179,7 +179,7 @@
     
 }
 
-.projects-title, .announcements-title {
+.projects-title, .announcements-title, .trending-title {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 20px;
@@ -215,18 +215,14 @@
     color: lightslategray;
 }
 
-.announcements-section {
+.announcements-section, .trending-section {
     padding: 0 15px;
     width: 100%;
     height: 100%;
 }
 
-.announcements-title {
-    text-align: center;
-}
 
-
-.announcements {
+.announcements, .trending {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,16 +234,16 @@
 
 
 
-.announcement {
+.announcement, .trend {
     border-bottom: 2px solid lightgrey;
     padding: 15px 10px 25px;
     text-align: center;
 }
 
-.announcement:last-child {
+.announcement:last-child, .trend:last-child {
     border-bottom: none;
 }
 
-.announcement-title {
+.announcement-title, .trend-title {
     font-weight: bold;
 }
